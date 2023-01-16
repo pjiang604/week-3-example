@@ -2,9 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import data from '../data/education.json'
-import { useState } from 'react'
-import Card from '../components/Card'
-import Link from 'next/Link'
+import {useState} from 'react'
 
 export default function Home() {
 
@@ -20,32 +18,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}> 
+      <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className={styles.description}> 
-          <Link href="about">About</Link>
+        <p className={styles.description}>
+          Get started by editing{' '}
+          <code className={styles.code}>pages/index.js</code>
         </p>
 
         <div className={styles.grid}>
 
-          <b>Business Degrees: </b>
-          {information && information.map((info, index) => {
-            if (info.department === "Business") { //this filters thru the department key in the education.json file. You can add "info.department.toLowerCase()" if you want it to find upper (exact) casing or lower case is okay too.
-              return (
-                <Card key={index} degree={info.degree} colour="red" font="10px" /> //This is pulling the Card component, passing over the degree property
-              )
-            }
-          })}
+          <div>Business Degrees: </div>
 
-          <b>Computing Degrees:</b>
           {information && information.map((info, index) => {
-            if (info.department === "Computing") { //this filters thru the department key in the education.json file. You can add "info.department.toLowerCase()" if you want it to find upper (exact) casing or lower case is okay too.
-              return (
-                <Card key={index} degree={info.degree} colour="blue" font="26px" />
-                //<div key={index}>{info.degree}</div> //If not using components, this adding the key here will count the index so that the console error disappears. Each key is unique now
+            if(info.department === "Business"){ //this filters thru the department key in the education.json file. You can add "info.department.toLowerCase()" if you want it to find upper (exact) casing or lower case is okay too.
+            return(
+              <div key={index}>{info.degree}</div> //Adding the key here will count the index so that the console error disappears. Each key is unique now
+              )
+            } else if(info.department === "Computing"){
+              return(
+                <div>Computing Degrees:</div>
+                <div key={index}>{info.degree}</div> 
               )
             }
           })}

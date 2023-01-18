@@ -1,0 +1,35 @@
+[
+    {
+        "image": "headshots/don.jpg",
+        "name": "Don D. Huffman",
+        "position": "Marketing Director",
+        "department": "Marketing",
+        "email": "dhuffman@creative.com",
+        "phoneNumber": "778-123-4567",
+        "yearsWorked": 5,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui dui, tincidunt eu ligula vestibulum, tincidunt ultrices eros. Cras ornare sapien velit, id mattis neque luctus aliquet. Sed iaculis condimentum lorem id sagittis. Pellentesque condimentum gravida leo, vel tempor ante laoreet sit amet. Quisque hendrerit."
+    },
+
+    {
+        "image": "headshots/kimberly.jpg",
+        "name": "Kimberly Daniels",
+        "position": "Creative Director",
+        "department": "Creative",
+        "email": "kdaniels@creative.com",
+        "phoneNumber": "778-123-4567",
+        "yearsWorked": 12,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui dui, tincidunt eu ligula vestibulum, tincidunt ultrices eros. Cras ornare sapien velit, id mattis neque luctus aliquet. Sed iaculis condimentum lorem id sagittis. Pellentesque condimentum gravida leo, vel tempor ante laoreet sit amet. Quisque hendrerit."
+    },
+
+    {
+        "image": "headshots/cynthia.jpg",
+        "name": "Cynthia Campbell",
+        "position": "Digital Artist",
+        "department": "Creative",
+        "email": "ccampbells@creative.com",
+        "phoneNumber": "778-123-4567",
+        "yearsWorked": 2,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui dui, tincidunt eu ligula vestibulum, tincidunt ultrices eros. Cras ornare sapien velit, id mattis neque luctus aliquet. Sed iaculis condimentum lorem id sagittis. Pellentesque condimentum gravida leo, vel tempor ante laoreet sit amet. Quisque hendrerit."
+    }
+
+]
